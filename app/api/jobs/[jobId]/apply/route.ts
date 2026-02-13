@@ -43,6 +43,7 @@ export async function POST(
 
     return NextResponse.json(application);
   } catch (error) {
+    console.error("Error applying for job: ", error);
     return new NextResponse("Internal server error", { status: 500 });
   }
 }

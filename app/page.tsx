@@ -3,11 +3,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-
       {/* HERO */}
       <section className="bg-white py-28 px-6">
         <div className="max-w-5xl mx-auto text-center">
-
           <h1 className="text-5xl font-bold text-gray-900 leading-tight mb-6">
             Find Your Next <span className="text-indigo-600">Opportunity</span>
           </h1>
@@ -21,7 +19,7 @@ export default function Home() {
             <input
               type="text"
               placeholder="Search jobs..."
-              className="flex-1 px-5 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="flex-1 px-5 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-indigo-500"
             />
             <button className="px-6 py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition">
               Search
@@ -31,14 +29,12 @@ export default function Home() {
           <div className="mt-6 text-sm text-gray-500">
             Popular: Frontend Developer, UI Designer, Product Manager
           </div>
-
         </div>
       </section>
 
       {/* FEATURED JOBS */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
             Featured Jobs
           </h2>
@@ -53,9 +49,7 @@ export default function Home() {
                   Senior Frontend Developer
                 </h3>
 
-                <p className="text-sm text-gray-500 mb-4">
-                  Remote • Full-time
-                </p>
+                <p className="text-sm text-gray-500 mb-4">Remote • Full-time</p>
 
                 <p className="text-sm text-gray-600 mb-6">
                   Work with a talented team building scalable web applications.
@@ -70,15 +64,12 @@ export default function Home() {
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
       {/* CTA */}
       <section className="bg-indigo-600 py-20 text-center text-white">
-        <h2 className="text-3xl font-bold mb-4">
-          Hiring Great Talent?
-        </h2>
+        <h2 className="text-3xl font-bold mb-4">Hiring Great Talent?</h2>
 
         <p className="mb-8 opacity-90">
           Post your job and connect with skilled professionals.
@@ -96,7 +87,6 @@ export default function Home() {
       <footer className="py-8 text-center text-sm text-gray-500 bg-white border-t">
         © {new Date().getFullYear()} JobBoard. All rights reserved.
       </footer>
-
     </div>
   );
 }
