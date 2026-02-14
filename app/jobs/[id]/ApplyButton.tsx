@@ -22,9 +22,9 @@ export default function ApplyButton({ jobId }: { jobId: string }) {
     setApplicationStatus("idle");
 
     try {
-      const response = await fetch(`/api/jobs/${jobId}/apply`, {
-        method: "POST",
-      });
+        await fetch(`/api/jobs/${jobId}/apply`, {
+          method: "POST",
+        });
       setApplicationStatus("success");
     } catch (error) {
       if (error instanceof Error) {
